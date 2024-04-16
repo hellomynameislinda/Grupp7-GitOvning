@@ -8,7 +8,10 @@
 
         public string APointlessMethod()
         {
-            return $"{Id}: {Name}\n{Description}";
+            Random testRandom = new Random();
+            var myNum = testRandom.Next(12,15);
+            
+            return $"{Id}: {Name}\n{Description}\n{myNum}";
         }
     }
 }
